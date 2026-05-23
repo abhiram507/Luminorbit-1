@@ -10591,7 +10591,7 @@ _log('[v23-4K-studio] PRODUCTION patch active — 4K Studio Quality',
 window.LUMINORBIT_CONFIG = {
   FRONTEND_URL:          'https://luminorbit1.dpdns.org',
   FALLBACK_FRONTEND_URL: 'https://luminorbit-1.pages.dev',
-  API_BASE_URL:          'https://luminorbitbackend-production.up.railway.app',
+  API_BASE_URL:          'luminorbitbackend-production.up.railway.app',
   HEALTH_ENDPOINT:       '/health',
   PROCESS_ENDPOINT:      '/api/process',
   UPLOAD_ENDPOINT:       '/api/upload',
@@ -10605,13 +10605,10 @@ window.LUMINORBIT_CONFIG = {
 /* Propagate to legacy window vars consumed throughout the codebase */
 window.LUMINORBIT_API_URL          = window.LUMINORBIT_CONFIG.API_BASE_URL;
 window.LUMINORBIT_API_KEY          = window.LUMINORBIT_API_KEY || 'luminorbit_secure_123';
-window.LUMINORBIT_BACKEND_FALLBACK = '';   /* No secondary backend — Railway is HA */
-window.LUMINORBIT_CLAUDE_PROXY     = window.LUMINORBIT_CONFIG.API_BASE_URL +
-                                     window.LUMINORBIT_CONFIG.CLAUDE_PROXY_ENDPOINT;
+
 
 /* ── Runtime globals (unchanged) ─────────────────────────────── */
-window.LUMINORBIT_CLAUDE_MODEL        = 'claude-sonnet-4-6';
-window.LUMINORBIT_CLOUDINARY_PRESET   = 'luminorbit_signed';
+window.LUMINORBIT_CLOUDINARY_CLOUD_NAME  = 'luminorbit';
 window.LUMINORBIT_4K_MODE             = true;
 window.LUMINORBIT_TARGET_W            = 3840;
 window.LUMINORBIT_TARGET_H            = 2160;
