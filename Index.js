@@ -59,7 +59,7 @@ const ORCH_CONFIG = {
     // Priority: centralized config → legacy var → production Railway URL
     const u = (window.LUMINORBIT_CONFIG && window.LUMINORBIT_CONFIG.API_BASE_URL)
       || window.LUMINORBIT_API_URL
-      || 'luminorbitbackend-production.up.railway.app';
+      || 'https://luminorbitbackend-production.up.railway.app';
     // Enforce HTTPS in production (never send to plain http:// in prod)
     if (u && u.startsWith('http://') && !u.includes('localhost') && !u.includes('127.0.0.1')) {
       _warn('[Config] Forcing HTTPS for non-localhost URL:', u);
