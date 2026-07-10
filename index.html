@@ -10656,7 +10656,6 @@ window.LUMINORBIT_CONFIG = {
   UPLOAD_ENDPOINT:       '/api/upload',
   JOBS_ENDPOINT:         '/api/jobs',
   TOOLS_ENDPOINT:        '/api/tools',
-  CLAUDE_PROXY_ENDPOINT: '/api/claude-proxy',
   TIMEOUT_MS:            120000,
   RETRY_COUNT:           3,
 };
@@ -10667,8 +10666,7 @@ window.LUMINORBIT_API_URL = (window.LUMINORBIT_CONFIG.API_BASE_URL || '').starts
   : 'https://' + window.LUMINORBIT_CONFIG.API_BASE_URL;
 window.LUMINORBIT_API_KEY          = window.LUMINORBIT_API_KEY || 'luminorbit_secure_123';
 /* FIX H-6: Backend fallback URL for orchestration.js retry chain */
-window.LUMINORBIT_BACKEND_FALLBACK = 'https://luminorbitbackend-production-adf1.up.railway.app';
-window.LUMINORBIT_CLAUDE_PROXY     = window.LUMINORBIT_API_URL + '/api/claude-proxy';
+window.LUMINORBIT_BACKEND_FALLBACK = 'https://luminorbitbackend-production-117f.up.railway.app';
 
 
 /* ── Runtime globals (unchanged) ─────────────────────────────── */
